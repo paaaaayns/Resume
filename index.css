@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Light - 400 */
+/* Regular - 400 */
+/* Medium - 500 */
+/* SemiBold - 600 */
+/* Bold - 700 */
+
+:root {
+  --primary: #07EECB;
+  --primary-variant: #05BCA1;
+  --bg-primary: #111111;
+  --bg-secondary: #29292E;
+  --p1: #81A3A5;
+  --p2: #FF7D0D;
+  --p3: #1F555F;
+
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+html, body  {
+  overflow-y: scroll;
+  scroll-behavior: smooth !important;
+}
+
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0px !important; 
+  padding: 0px !important;
+}
+
+.section {
+  border-bottom: 2px solid var(--bg-secondary);
+  padding: 2rem 2rem !important;
+}
+  @media (min-width: 576px) {
+    .section {
+      padding: 2rem 3rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 2rem 4rem !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .section {
+      padding: 2rem 6rem !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .section {
+      padding: 2rem 8rem !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .section {
+      padding: 2rem 10rem !important;
+    }
+  }
+
+
+a {
+  text-decoration: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: var(--primary);
+}
+
+.nav-item a:active {
+  color: var(--primary);
+}
+
+
+.my-image {
+  width: 250px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  border-radius: 12px;
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-alternative {
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  color: var(--primary);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-title {
+  background-color: var(--primary);
+  padding: 20px 32px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+
+.heading {
+  font-size: 24px; 
+  font-weight: 700;
+}
+
+.list  {
+  border-left: 2px solid var(--primary);
+}
+
+.list .list-item .text1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.list .list-item .text2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.list .list-item:not(:last-child) .text2 {
+  border-bottom: 2px solid var(--bg-secondary);
+  padding-bottom: 1.5rem;
+}
+
+
+.skill-container {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.skill-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.logo-group .logos{
+  max-width: 75px;
+  background-color: transparent;
+}
+
+/* sm */
+@media (min-width: 576px) {
+  .logo-group .logos{
+    max-width: 75px;
+    background-color: transparent;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .logo-group .logos{
+    max-width: 75px;
+    background-color: transparent;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .logo-group .logos{
+    max-width: 70px;
+    background-color: transparent;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .logo-group .logos{
+    max-width: 80px;
+    background-color: transparent;
+  }
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+  .logo-group .logos{
+    max-width: 80px;
+    background-color: transparent;
+  }
+}
+
+.project-description {
+  border-right: 1px solid var(--primary);
+  border-radius: 0px 16px 16px 0px;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.project-description p{
+  background-color: transparent;
+}
+
+.project-logo {
+  padding: 5rem 0rem;
+  border-radius: 12px 0px 12px 12px;
+}
+
+.project-logo .logo {
+  max-width: 200px;
+}
+
